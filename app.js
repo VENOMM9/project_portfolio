@@ -37,7 +37,7 @@ app.post('/home', (req, res) => {
       secure: true, // true for 465, false for other ports
       auth: {
         user: process.env.email, // replace with your email address
-        pass: process.env.password, // replace with your password
+        pass: 'apab bcje vgdf wiwx' // replace with your password
       },
     });
 
@@ -86,3 +86,6 @@ app.get('/contacts', (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
+
+
+module.exports = app
