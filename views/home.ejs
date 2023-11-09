@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  </head>
+  <body>
+    <header><%- include('partials/header') %></header>
+
+    <div class="welcome"><h1>Christina Melameka</h1></div>
+    <div class="image-container">
+      <% for(let i=1; i<=32; i++) { %>
+      <div class="image-item">
+        <img src="/images/image<%= i %>.jpeg" alt="Image <%= i %>" />
+      </div>
+      <% } %>
+    </div>
+    <div class="welcome-container"  id="welcomeContainer">
+      <div class="welcome-message"  id="welcomeMessage">
+          <h1 class="welcome-title">Welcome to My Portfolio</h1>
+          <p class="welcome-text">Thank you for visiting my portfolio. I am excited to share my work and projects with you. Feel free to explore and learn more about my skills and experiences. If you have any questions or would like to get in touch, please don't hesitate to contact me. Enjoy your stay!</p>
+      </div>
+      <form action="/home" method="post">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    
+      <footer class="footer">
+        <div class="social-icons">
+          <a href="https://www.vk.com" target="_blank" class="social-icon">
+            <i class="fab fa-vk"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com" target="_blank" class="social-icon">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="https://www.telegram.org" target="_blank" class="social-icon">
+            <i class="fab fa-telegram-plane"></i>
+          </a>
+        </div>
+      </footer>
+      
+
+      <script>
+        window.addEventListener("scroll", function () {
+          let welcomeContainer = document.getElementById("welcomeContainer");
+          let welcomeMessage = document.getElementById("welcomeMessage");
+          let scrollPosition = window.scrollY;
+  
+          if (scrollPosition > welcomeContainer.offsetTop - window.innerHeight + 100) {
+            welcomeContainer.style.opacity = 1;
+            welcomeMessage.classList.add("show");
+          } else {
+            welcomeContainer.style.opacity = 0;
+            welcomeMessage.classList.remove("show");
+          }
+        });
+      </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

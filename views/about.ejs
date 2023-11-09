@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header><%- include('partials/header') %></header>
+
+    <div class="container">
+        <div class="about-container p-5 bg-dark text-light">
+            <div class="about-content">
+                <h2 class="text-primary">About Me</h2>
+                <p class="text-muted">
+                    I am a Congolese African model living in Russia and currently studying architecture. With a passion for exploration and travel, I embrace new experiences and diverse cultures. My journey has been a fusion of creativity and learning, and I aspire to bring a unique perspective to the world of architecture.
+                </p>
+                <p class="text-muted">
+                    Through my work, I aim to inspire others and create a positive impact within the architectural community. My diverse background has shaped my creative vision, and I continue to seek innovative ways to merge my love for modeling and architecture.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="image-container">
+        <% for(let i=33; i<=38; i++) { %>
+        <div class="image-item">
+          <img src="/images/image<%= i %>.jpeg" alt="Image <%= i %>" />
+        </div>
+        <% } %>
+      </div>
+      
+</body>
+</html>

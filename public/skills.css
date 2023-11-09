@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Garamond', serif;
+    background: linear-gradient(45deg, #403c3b, rgb(52, 52, 52), #040e0e, rgb(2, 0, 34)) fixed;
+    color: #f5f5f5;
+}
+
+.container {
+    width: 88%;
+    margin-top: 100px;
+    background: none; /* Remove background for the container */
+}
+
+.about-container {
+    border-radius: 10px;
+    
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease;
+    text-align: center; /* Align text to the center */
+    background: none; /* Remove the background for the about container */
+}
+
+.text-primary {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.list-group-item {
+    border: none;
+    font-size: 18px;
+    text-align: center; /* Align the text within list items to the center */
+    background: none; /* Remove background for list items */
+}
+
+.list-group {
+    padding-left: 0;
+    margin-bottom: 0;
+    background: none; /* Remove background for the list group */
+}
+
+.list-group-item::before {
+    display: none; /* Hide the bullet points */
+}
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0; /* Add this line to ensure the navbar starts from the left side */
+    z-index: 1000;
+    background: linear-gradient(45deg, #403c3b, rgb(52, 52, 52), #040e0e, rgb(2, 0, 34));
+    padding: 10px 0; /* Adjust the padding to control the space on the left and right */
+    animation: changeBackground 10s infinite; /* Add an animation to the background */
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0; /* Add this line to remove any default margin */
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 14px;
+  }
+  
+  @keyframes changeBackground {
+    0% {
+      background-color: #403c3b;
+    }
+    20% {
+      background-color: #1f261f;
+    }
+    40% {
+      background-color: #040e0e;
+    }
+    60% {
+      background-color: #0e304c;
+    }
+    80% {
+      background-color: #040e0e;
+    }
+    100% {
+      background-color: rgb(2, 0, 34);
+    }
+  }
+  
+  .nav-link {
+    animation: fadeIn 1s ease;
+  }
+
