@@ -16,7 +16,7 @@ app.set('views',  'views');
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Define a route
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
     res.render('home');
    
 });
