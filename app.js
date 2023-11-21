@@ -3,7 +3,6 @@ const app = express();
 const port = 4500;
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
-require('dotenv').config();
 
 const path = require('path')
 
