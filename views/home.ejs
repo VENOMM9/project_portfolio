@@ -13,6 +13,13 @@
 
     
     <div class="welcome"><h1>Christina Melameka</h1></div>
+    <div class="upimage-container">
+      <% for(let i=44; i<=49; i++) { %>
+      <div class="upimage-item">
+        <img src="/images/image<%= i %>.jpeg" alt="Image <%= i %>" />
+      </div>
+      <% } %>
+    </div>
     <div class="image-container">
       <% for(let i=1; i<=34; i++) { %>
       <div class="image-item">
