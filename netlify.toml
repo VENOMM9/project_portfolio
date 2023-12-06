@@ -1,12 +1,12 @@
 [build]
-  command = "npm start"
+  command = "npm run build"
   publish = "public"
   base = "/"
 
 [context.production]
-  command = "npm start"
+  command = "npm run build"
   publish = "public"
 
 [context.branch-deploy]
-  command = "npm start"
+  command = "npm run build"
   publish = "public"
