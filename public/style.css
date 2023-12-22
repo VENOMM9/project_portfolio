@@ -80,17 +80,25 @@ body {
   0% {
       background-image: url('images/image43.jpeg');
   }
-  25% {
+  20% {
       background-image: url('images/image39.jpeg');
   }
-  50% {
+  40% {
       background-image: url('images/image42.jpeg');
   }
-  75% {
-      background-image: url('images/photo1699309673\ \(2\).jpeg');
-  }
+  
+ 
+60% {
+  background-image: url('images/image53.jpeg');
+}
+
+80% {
+  background-image: url('images/image52.jpeg');
+}
+
+
   100% {
-      background-image: url('images/chris-port\ 7.jpg');
+      background-image: url('images/image54.jpeg');
   }
 }
 
